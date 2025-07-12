@@ -15,7 +15,7 @@ RUN apt-get install -yq --no-install-recommends \
   perl libcurses-perl build-essential \
   libncurses-dev autoconf fio sqlite3 \
   apt-transport-https ca-certificates \
-  php \
+  php tidy \
   && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN cpan -I Term::Animation
