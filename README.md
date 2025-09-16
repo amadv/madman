@@ -12,7 +12,7 @@ socials](https://linktr.ee/rwxrob).
 
 ```sh
 podman build -t madman https://github.com/amadv/madman.git
-podman run -it --hostname madman --name madman madman
+podman run -it --privileged --hostname madman --name madman madman
 ```
 
 If you want to throw away the container after running just add `--rm` to the `run` command above. Otherwise, when you `exit` it will still be there and you can restart and attach later to continue your work until you explicitly remove it:
